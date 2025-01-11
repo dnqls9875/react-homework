@@ -22,7 +22,7 @@ npx degit dnqls9875/react-homework.
 
 2️⃣ 터미널 창에서 위의 코드를 붙여넣기 합니다.
 
-3️⃣. 패키지를 설치합니다.
+3️⃣ 패키지를 설치합니다.
 
 ```bash
 npm i
