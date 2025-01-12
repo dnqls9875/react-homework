@@ -10,7 +10,9 @@ function App() {
     React.createElement(
       "ul",
       { role: "tablist" },
-      React.createElement(Chip, {}),
+      React.createElement(Chip, {
+        className: "is--active",
+      }),
       React.createElement(Chip, {})
     )
   );
