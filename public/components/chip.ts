@@ -1,12 +1,14 @@
 import React from "../lib/react.js";
 
-function removeClass(): void {
+function removeClass(taregt): void {
   const buttons = document.querySelectorAll("button");
 
   // 초기에 class 모두 제거
   buttons.forEach((item) => item.classList.remove("is--active"));
 
   // 해당 타겟 버튼만 class 추가
+
+  taregt.classList.add("is--active");
 }
 
 function Chip(props: { className: string }) {
@@ -17,8 +19,8 @@ function Chip(props: { className: string }) {
       "button",
       {
         type: "button",
-        onClick: () => {
-          removeClass();
+        onClick: (e) => {
+          removeClass(e.currentTarget);
         },
         "aria-label": "탭 버튼",
         className: props.className,
