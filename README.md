@@ -25,13 +25,11 @@ npx degit dnqls9875/react-homework.
 3️⃣ 패키지를 설치합니다.
 
 ```bash
-npm i
 pnpm i
 ```
 
 4️⃣ 서버실행 및 컴파일을 실행합니다.
 
 ```bash
-npm run dev
 pnpm dev
 ```
