@@ -1,23 +1,18 @@
 import React from "../lib/react.js";
+import Chip from "../components/chip";
 
 function App() {
   return React.createElement(
-    "div",
+    "nav",
     {
-      className: "app",
-    }
-
-    // React.createElement(
-    //   Box,
-    //   {
-    //     className: "box--circle",
-    //     id: "i'm-box",
-    //     "aria-label": "나는 박스다!",
-    //     title: "나는 박스다!",
-    //     translate: "no",
-    //   },
-    //   "기본 박스"
-    // )
+      className: "app-nav",
+    },
+    React.createElement(
+      "ul",
+      { role: "tablist" },
+      React.createElement(Chip, {}),
+      React.createElement(Chip, {})
+    )
   );
 }
 
