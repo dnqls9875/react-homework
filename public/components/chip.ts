@@ -1,5 +1,4 @@
 import React from "../lib/react.js";
-import { Tab } from "../scripts/tab";
 
 function removeClass(taregt: HTMLButtonElement): void {
   const buttons = document.querySelectorAll("button");
